@@ -1,0 +1,45 @@
+.About .center
+{
+   
+    font-family: myfont;
+    color: black;
+    letter-spacing: 5px;
+    font-size:30px;
+    position: relative;
+    top:7vw;
+    margin-left: 40px;
+}
+.About{
+    background: linear-gradient(to bottom, #ffffff 0%, #B3B6B7  100%);
+    width: 100vw;
+    height: 100vh;
+}
+.About .U
+{
+    text-decoration: none;
+}
+.About .U:after {
+    content: '';
+
+    width:15%;
+    position: absolute;
+    left: 0;
+    bottom: 3px;
+   
+    border-width: 0 0 4px;
+    border-style: solid ;
+    border-color: #E784A7;
+}
+.About
+{
+    position: relative;
+    z-index: 1;
+}
+.About .para
+{
+    color: black;
+    margin:200px;
+    margin-top:150px;
+    font-size:40px;
+    
+}

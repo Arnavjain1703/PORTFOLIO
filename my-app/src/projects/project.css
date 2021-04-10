@@ -1,0 +1,40 @@
+.projects
+{
+    width: 100vw;
+    height:100vh;
+    position: relative;
+    z-index: 1;
+}
+.projects .center
+{
+   
+    font-family: myfont;
+    color: white;
+    letter-spacing: 5px;
+    font-size:30px;
+    position: relative;
+    top:7vw;
+    margin-left: 40px;
+}
+.projects .U
+{
+    text-decoration: none;
+}
+.projects .U:after {
+    content: '';
+
+    width:20%;
+    position: absolute;
+    left: 0;
+    bottom: 3px;
+
+    border-width: 0 0 4px;
+    border-style: solid ;
+    border-color: #E784A7;
+}
+.projects .owl-carousel
+{
+    margin-top:180px;
+    padding-left: 200;
+    padding-right: 200;
+}

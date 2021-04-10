@@ -1,0 +1,17 @@
+.Item
+{
+
+   
+    margin-top:5vw;
+    padding:0px;
+    margin:0px;
+    text-align:center;
+    padding-left: 1vw;
+}
+.Item img{
+  width: 21vw !important;
+  
+}
+title{
+    padding: 0px;
+}

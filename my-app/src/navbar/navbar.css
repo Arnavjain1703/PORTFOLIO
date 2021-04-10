@@ -1,0 +1,59 @@
+ 
+.app
+{
+    width: 100vw;
+
+}
+
+.app button{
+    position: absolute;
+    left:90vw;
+    top:10px;
+    z-index: 10;
+}
+.app #Navbar
+{
+  width:100vw !important;
+  min-height: 60px;
+  z-index: 100;
+  position: fixed;
+  top:0;
+  background-color:#171719;
+}
+.app img{
+    height: 60px
+ }
+.app #Navlink
+{
+    float: left;
+    color: #fff;
+    text-align: center;
+    padding: 5px;
+    text-decoration: none;
+    font-size: 21px;
+    margin-left:20px ;
+    margin-right: 30px;
+    font-style: bold;
+    font-weight: 100;
+}
+
+@media screen and (max-width: 500px) {
+    .app button{
+        position: absolute;
+        left:85vw;
+        top:15px;
+    } 
+    .app #Navlink
+    {
+        font-size: 15px;
+    }
+    .app #nav-link
+    {
+        padding: 0px 25vw;
+    }
+    .app img{
+        height: 40px
+     }
+    
+    
+}
