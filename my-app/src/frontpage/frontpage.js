@@ -14,10 +14,10 @@ class Frontpage extends Component{
         <div className="frontpage" >
         {/* <Navbar></Navbar> */}
         <Landing></Landing>
-        {/* <Project></Project>
-        <About></About>
+        {/* <Project></Project> */}
+        {/* <About></About>
         <MYskills ></MYskills > */}
-        <div className="wall"></div>
+        {/* <div className="wall"></div> */}
         </div>
          </div>
 

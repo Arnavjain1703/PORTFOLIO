@@ -6,7 +6,20 @@ class Frontpage extends Component{
        return (
         <div className="landing " >
             <div className="row display">
-              <div className="col-sm-6">
+              <div className="col-sm-6 iconBg">
+                <div className="iconlayer1 row display3">
+                <div className="col-sm-3"><img src="/assets/icon.svg"></img></div>
+                <div className="col-sm-3"><img src="/assets/icon4.svg"></img></div>
+                <div className="col-sm-3"><img src="/assets/icon2.svg"></img></div>
+                <div className="col-sm-3"><img src="/assets/icon3.svg"></img></div>
+                </div>
+              
+                <div className="row iconlayer1 ">
+                  <div className="col-sm-3 display3">
+                  <div className="special"><img src="/assets/icon3.svg"></img></div>
+                  <div className="special"><img src="/assets/icon3.svg"></img></div>
+                  </div>
+                  <div className="col-sm-12 col-md-6" style={{textAlign:"center"}}>
                   <div className="name">
                     Arnav
                   </div>
@@ -16,8 +29,22 @@ class Frontpage extends Component{
                   
                   <div className="line"></div>
                   <div  className="skills">
-                    Full Stack Developer <span style={{color:"#E784A7",fontWeight:"500",fontSize:"30px"}}>/</span> Competitive Programmer 
+                    Full Stack Developer <span className="dash" >/</span> Competitive Programmer 
                   </div>
+                  </div>
+                  <div className="col-sm-3 display3">
+                  <div className="special"><img src="/assets/icon3.svg"></img></div>
+                  <div className="special"><img src="/assets/icon3.svg"></img></div>
+                  </div>
+                </div>
+               
+                <div className="iconlayer1 row display3">
+                <div className="col-sm-3"><img src="/assets/icon.svg"></img></div>
+                <div className="col-sm-3"><img src="/assets/icon4.svg"></img></div>
+                <div className="col-sm-3"><img src="/assets/icon2.svg"></img></div>
+                <div className="col-sm-3"><img src="/assets/icon3.svg"></img></div>
+                </div>
+                  
               </div>
               <div className="col-sm-6 center bg">
                 <div className="bg2 "></div>
@@ -38,7 +65,7 @@ class Frontpage extends Component{
                   
                   <div className="line"></div>
                   <div  className="skills">
-                    Full Stack Developer <span style={{color:"#E784A7",fontWeight:"500",fontSize:"30px"}}>/</span> Competitive Programmer 
+                    Full Stack Developer <span className="dash">/</span> Competitive Programmer 
                   </div>
               </div>
             </div>

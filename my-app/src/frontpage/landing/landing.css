@@ -2,9 +2,23 @@
 {
     width: 100vw;
     height: 100vh;
-    background: linear-gradient(to bottom, #252525 0%,  #000000 100%);
+    background: linear-gradient(to bottom, #252525 0%,  #000000 80%);
 }
-
+.landing .col-sm-6{
+    padding:0px
+}
+.landing .col-sm-3
+{
+    padding: 0px;
+}
+.landing .col-sm-2
+{
+    padding:0px;
+    text-align:center;
+}
+.landing .col-sm-3 img{
+    width: 50%;
+}
 .landing .display2
 {
     display:none
@@ -21,7 +35,7 @@
 {
     color: white;
     text-align: center;
-    font-size: 20px;
+    font-size: 1vw;
 }
 .landing .bg4
 {
@@ -49,6 +63,7 @@
     border-radius: 2px;
     animation:move 8s infinite;
 }
+
 .landing .bg3{
     width: 25vw;
     height: 25vw;
@@ -64,20 +79,41 @@
 {
     color: white;
     text-align: center;
-    margin-top: 20vh;
-    font-size: 10vw;
+  
+    font-size: 7vw;
     line-height:150px;
     font-family: myfont;
 }
+.landing .iconlayer1
+{
+    width: 100%;
+}
+.landing .special
+{
+    margin-top: 10vh;
+}
+.iconlayer1 img
+{
+    width: 50%;
+}
+.iconlayer1
+{
+    text-align: center;
+    margin-top:20px;
+}
 .landing .line
 {
-    width: 80%;
+    width: 100%;
     border: 1px solid #E784A7;
     background-color: #E784A7;
     border-radius: 10px;
-    margin-left: 4vw;
+  
     margin-top: 50px;
 }
+.landing .iconBg
+{
+   margin-top: 8vh;
+}    
 @keyframes move {
     0%   {transform: rotateZ(0deg);}
     50%  {transform: rotateZ(180deg);}
@@ -91,58 +127,38 @@
     /* 75% {transform: rotateZ(-180deg);}
     100% {transform: rotateZ(0deg);} */
   }
-  @media only screen and (max-width: 576px) {
-      .landing .display{
-          display:none
-      }
-      .landing .display2{
-          display: block;
-      }
-      .landing .bg
-      {
-          width: 100vw;
-      }
-      .landing .bg2
-      {
-          width:40vw;
-          height: 40vw;
-          left: 30vw;
-          top:15vh !important;
-      }
-      .landing .bg3
-      {
-        width:40vw;
-        height: 40vw;
-        left: 30vw;
-        top:15vh !important;
-      }
-      .landing .img
-       {
-           height:40vh
-       }
-      .landing .bg4
-      {
-        width:40vw;
-        height: 40vw;
-        left: 30vw;
-        top:15vh !important;
-      }
-      .landing .name{
-         margin-top: 10vh;
-         font-size: 7vw;
-         line-height: 90px !important;
-    
-      }
-      .landing .line{
-        margin-top:0px;
-        margin-left: 9vw;
-      }
-      .landing .skills
-      {
-          font-size:4vw;
-      }
+  .landing .dash
+  {
+      color:#E784A7;font-weight:500;font-size:20px !important
   }
-  @media only screen and (max-width: 769px) {
+  
+  
+  @media only screen and (max-width: 1024px) {
+     .landing .bg2
+     {
+         top:30vh
+     }
+     .landing .bg3
+     {
+         top:30vh
+     }
+     .landing .dash{
+         font-size:10px;
+     }
+     .landing .bg4
+     {
+         top:30vh
+     }
+     .landing .name
+     {
+        line-height:130px;
+     }
+     .landing .name{
+         margin-top: 5vh;
+         
+     }
+  }
+  @media only screen and (max-width: 767px) {
     .landing .bg2
     {
         top:35vh
@@ -157,24 +173,76 @@
     }
     .landing .name
      {
-        line-height:80px ;
+        line-height:10vh ;
+     }
+     .landing .display3
+     {
+         display: none;
+     }
+     .landing .name{
+         width: 100%;
+         margin-top:20vh;
+     }
+     .landing .line{
+         width: 70%;
+         margin-left: 8vw;
+     }
+     .landing .skills
+     {
+         font-size: 10px;
      }
  }
-  @media only screen and (max-width: 1024px) {
-     .landing .bg2
+
+ @media only screen and (max-width: 576px) {
+    .landing .display{
+        display:none
+    }
+    .landing .display2{
+        display: block;
+    }
+    .landing .bg
+    {
+        width: 100vw;
+    }
+    .landing .bg2
+    {
+        width:44vw;
+        height: 44vw;
+        left: 26vw;
+        top:15vh !important;
+    }
+    .landing .bg3
+    {
+      width:44vw;
+      height: 44vw;
+      left: 26vw;
+      top:15vh !important;
+    }
+    .landing .img
      {
-         top:30vh
+         height:40vh
      }
-     .landing .bg3
-     {
-         top:30vh
-     }
-     .landing .bg4
-     {
-         top:30vh
-     }
-     .landing .name
-     {
-        line-height:130px;
-     }
-  }
+    .landing .bg4
+    {
+      width:44vw;
+      height: 44vw;
+      left: 26vw;
+      top:15vh !important;
+    }
+    .landing .name{
+       margin-top: 15vh;
+       font-size: 10vw;
+       line-height: 90px !important;
+  
+    }
+    .landing .line{
+      margin-top:0px;
+      margin-left: 10vw;
+      width: 80%;
+    }
+    .landing .skills
+    {
+        font-size:4vw;
+    }
+   
+}
