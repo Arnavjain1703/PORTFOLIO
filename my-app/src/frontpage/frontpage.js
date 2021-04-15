@@ -15,8 +15,8 @@ class Frontpage extends Component{
         {/* <Navbar></Navbar> */}
         <Landing></Landing>
         <Project></Project>
-        {/* <About></About>
-        <MYskills ></MYskills > */}
+         <About></About>
+        <MYskills ></MYskills >
         {/* <div className="wall"></div> */}
         </div>
          </div>

@@ -5,17 +5,17 @@ class Frontpage extends Component{
    {
        return (
         <div className="landing " >
-            <div className="row display">
-              <div className="col-sm-6 iconBg">
-                <div className="iconlayer1 row display3">
+            <div  className="row display">
+              <div  className="col-sm-6 iconBg">
+                <div style={{opacity:0}} className="iconlayer1 row display3">
                 <div className="col-sm-3"><img src="/assets/icon.svg"></img></div>
                 <div className="col-sm-3"><img src="/assets/icon4.svg"></img></div>
                 <div className="col-sm-3"><img src="/assets/icon2.svg"></img></div>
                 <div className="col-sm-3"><img src="/assets/icon3.svg"></img></div>
                 </div>
               
-                <div className="row iconlayer1 ">
-                  <div className="col-sm-3 display3">
+                <div  className="row iconlayer1 ">
+                  <div style={{opacity:0}} className="col-sm-3 display3">
                   <div className="special"><img src="/assets/icon3.svg"></img></div>
                   <div className="special"><img src="/assets/icon3.svg"></img></div>
                   </div>
@@ -32,13 +32,13 @@ class Frontpage extends Component{
                     Full Stack Developer <span className="dash" >/</span> Competitive Programmer 
                   </div>
                   </div>
-                  <div className="col-sm-3 display3">
+                  <div style={{opacity:0}} className="col-sm-3 display3">
                   <div className="special"><img src="/assets/icon3.svg"></img></div>
                   <div className="special"><img src="/assets/icon3.svg"></img></div>
                   </div>
                 </div>
                
-                <div className="iconlayer1 row display3">
+                <div style={{opacity:0}} className="iconlayer1 row display3">
                 <div className="col-sm-3"><img src="/assets/icon.svg"></img></div>
                 <div className="col-sm-3"><img src="/assets/icon4.svg"></img></div>
                 <div className="col-sm-3"><img src="/assets/icon2.svg"></img></div>

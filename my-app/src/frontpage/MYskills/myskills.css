@@ -1,8 +1,7 @@
 .myskills
 {
-    background: #000000;
+    background: linear-gradient(to top, #252525 0%,  #000000 80%);
     width: 100vw;
     height:100vh;
-    position: relative;
-    z-index: 1;
+
 }

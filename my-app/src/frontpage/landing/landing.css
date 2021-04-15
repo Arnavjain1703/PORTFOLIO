@@ -32,6 +32,13 @@
     width: 100%;
     height: 100vh;
 }
+.landing .iconBg
+{
+    background-image: url('../../images/bg1.png');
+    
+    background-size:cover ;
+    background-position:center;
+}
 .landing .skills
 {
     color: white;
