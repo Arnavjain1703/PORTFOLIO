@@ -3,6 +3,7 @@
     width: 100vw;
     height: 100vh;
     background: linear-gradient(to bottom, #252525 0%,  #000000 80%);
+    overflow: hidden;
 }
 .landing .col-sm-6{
     padding:0px

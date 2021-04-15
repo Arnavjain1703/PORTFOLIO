@@ -1,65 +1,111 @@
-import React from 'react';
-import './project.css';
-import Item from './item/item'
-//Owl Carousel Libraries and Module
-import OwlCarousel from 'react-owl-carousel';
-import 'owl.carousel/dist/assets/owl.carousel.css';
-import 'owl.carousel/dist/assets/owl.theme.default.css';
-
-//Owl Carousel Settings
-const options = {
-    responsiveClass: true,
-    margin:0,
-    autoplay: true,
-    rewind:true,  fluidSpeed: 2000,
-    autoplayTimeout:2000,
-  responsive: {
-      0: {
-          items: 1,
-      },
-      400: {
-          items: 1,
-      },
-      600: {
-          items: 2,
-      },
-      700: {
-          items: 3,
-      },
-      1000: {
-          items: 4,
-
-      }
-  },
-};
-class Project extends React.Component {
+import React, { Component } from "react";
+import Carousel from "react-spring-3d-carousel";
+import uuidv4 from "uuid";
+import { config } from "react-spring";
+import './project.css'
+export default class Example extends Component {
+  state = {
+    goToSlide: 0,
+    offsetRadius: 1,
+    showNavigation: true,
+    config: config.gentle,
+    loop:"",
+  };
+ componentDidMount()
+ {
+  var self = this;
+  var x=setInterval(function() {
+    self.setState({goToSlide:self.state.goToSlide+1})
+  }, 2000);
+  this.setState({loop:x});
+ }
+  slides = [
+    {
+      key: uuidv4(),
+      content: <img  src="/assets/P1.png" alt="1" />
+    },
+    {
+      key: uuidv4(),
+      content: <img  src="/assets/P1.png" alt="1" />
+    },
+    {
+      key: uuidv4(),
+      content: <img src="/assets/P1.png" alt="1" />
+    },{
+      key: uuidv4(),
+      content: <img src="/assets/P1.png" alt="1" />
+    },{
+      key: uuidv4(),
+      content: <img src="/assets/P1.png" alt="1" />
+    },{
+      key: uuidv4(),
+      content: <img src="/assets/P1.png" alt="1" />
+    },
+    {
+      key: uuidv4(),
+      content: <img src="/assets/P1.png" alt="1" />
+    },{
+      key: uuidv4(),
+      content: <img src="/assets/P1.png" alt="1" />
+    },{
+      key: uuidv4(),
+      content: <img src="/assets/P1.png" alt="1" />
+    },{
+      key: uuidv4(),
+      content: <img src="/assets/P1.png" alt="1" />
+    },{
+      key: uuidv4(),
+      content: <img src="/assets/P1.png" alt="1" />
+    },{
+      key: uuidv4(),
+      content: <img src="/assets/P1.png" alt="1" />
+    },
+  ].map((slide, index) => {
+    return { ...slide, onClick: () => this.setState({ goToSlide: index }) };
+  });
+  
+  onChangeInput = e => {
+    this.setState({
+      [e.target.name]: parseInt(e.target.value, 10) || 0
+    });
+  };
+  checkClick() {
+    while(1)
+    {
+      console.log("ijsjdfnv");
+    }
+  }
   render() {
-      var A=[
-         "/assets/P1.png",
-         "/assets/P3.png",
-         "/assets/P4.png",
-         "/assets/P5.png",
-         "/assets/P1.png",
-         "/assets/P3.png",
-         "/assets/P4.png",
-         "/assets/P5.png",
-      ]
-
     return (
-<div className="projects">
-                <div className="center"><u className="U">MY PROJECTS</u></div>
+     <div className="projects">
+       
+       <div className="row">
+         <div  className="col-sm-6 bg"></div>
+       </div>
+       <div className="heading"><div className="content">My Project 📚</div></div>
+       
 
-                  <OwlCarousel className="slider-items owl-carousel" {...options}>
-                      {
-                          A.map(order=>
-                            {
-                                return(<Item image={order}></Item>)
-                            })
-                      }
-                  </OwlCarousel>
-</div>
-)
-};
+      <div className="setting">
+        <Carousel
+          slides={this.slides}
+          goToSlide={this.state.goToSlide}
+          // offsetRadius={this.state.offsetRadius}
+          // showNavigation={this.state.showNavigation}
+          animationConfig={this.state.config}
+        />
+        <div
+          style={{
+            margin: "0 auto",
+            marginTop: "2rem",
+            width: "50%",
+            display: "flex",
+            justifyContent: "space-around"
+          }}
+        >
+          
+      </div>
+      </div>
+      </div>
+    );
+  }
 }
-
-export default Project
