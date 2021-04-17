@@ -67,4 +67,9 @@
         font-size: 6vw;
         padding-left: 20vw;
     }
+    .About .para{
+        font-size:5.5vw;
+        margin-top: 5vh;
+        text-align: justify;
+    }
   }

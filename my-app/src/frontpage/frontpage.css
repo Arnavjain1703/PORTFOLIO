@@ -1,5 +1,9 @@
 .frontpage
 {
     overflow-x: hidden;
-    overflow-y: hidden;
+    /* overflow-y: hidden; */
+    width: 100vw;
+    background: url('../images/bg1.png');
+    background-position: center;
+    
 }
