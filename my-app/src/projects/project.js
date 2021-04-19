@@ -79,8 +79,9 @@ export default class Example extends Component {
     return (
      <div className="projects">
        
-       <div className="row">
+       <div className="row position">
          <div  className="col-sm-6 bg"></div>
+         {/* <div className="col-sm-6 bg2"></div> */}
        </div>
        <div className="heading"><div className="content">My Project 📚</div></div>
        

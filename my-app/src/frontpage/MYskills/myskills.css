@@ -15,16 +15,17 @@
     width: 100vw;
     padding-left:3vw;
 }
-.myskills .display2
-{
-    display: none;
-}
+
 .myskills .content
 {
     width: 15vw;
     border-bottom: 3px solid #d78ca7;
    
     margin-bottom: 50px;
+}
+.myskills .display2
+{
+    display: none;
 }
 .myskills .bg
 {

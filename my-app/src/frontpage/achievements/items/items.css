@@ -1,0 +1,30 @@
+.item2 
+{
+    width: 33vw;
+    text-align: center;
+   
+    height:auto;
+    margin-bottom: 20px;
+
+}
+
+.item2 img{
+    
+   width: 100%;
+}
+
+@media screen and (max-width: 576px) {
+    .item2
+    {
+        width: 65vw;
+        height: auto;
+        margin-top: 20px;
+    } 
+}
+
+@media screen and (max-width: 376px) {
+    .item2
+    {
+        width: 80vw;
+    } 
+}

@@ -1,10 +1,11 @@
 import React,{Component} from 'react';
 import Landing from './landing/landing'
-// import Project from '../projects/project'
 import About from './About/About'
 import Navbar from '../navbar/navbar';
 import Project from '../projects/project';
 import MYskills from './MYskills/myskills'
+import Achieve from './achievements/achieve'
+import Contact from './contact/contact'
 import './frontpage.css'
 class Frontpage extends Component{
    render()
@@ -17,7 +18,8 @@ class Frontpage extends Component{
         <Project></Project>
          <About></About>
         <MYskills ></MYskills >
-        {/* <div className="wall"></div> */}
+        <Achieve></Achieve>
+        <Contact></Contact>
         </div>
          </div>
 
