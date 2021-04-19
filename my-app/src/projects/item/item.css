@@ -8,10 +8,11 @@
     text-align:center;
     padding-left: 1vw;
 }
-.Item img{
-  width: 21vw !important;
-  
-}
+
+
 title{
     padding: 0px;
+}
+@media screen and (max-width: 576px) {
+
 }

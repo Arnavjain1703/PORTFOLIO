@@ -13,7 +13,7 @@ class Frontpage extends Component{
        return (
         <div >
         <div className="frontpage" >
-        {/* <Navbar></Navbar> */}
+        <Navbar></Navbar>
         <Landing></Landing>
         <Project></Project>
          <About></About>

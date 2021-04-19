@@ -3,6 +3,7 @@
  width: 100vw;
  min-height: 100vh;
  background: linear-gradient(to bottom, #252525 0%,  #000000 80%);
+
 }
 .achieve .cover
 {
@@ -21,9 +22,11 @@
     font-family: myFont;
     font-size: 30px;
     letter-spacing: 2px;
-    /* margin-top: 50px; */
     width: 100vw;
     padding-left:3vw;
+    position:sticky;
+    top:0;
+ 
 }
 
 .achieve .content

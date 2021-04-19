@@ -4,12 +4,7 @@
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 width="512px" height="512px" viewBox="0 0 512 512" enable-background="new 0 0 512 512" xml:space="preserve">
-	 <style type="text/css">
-	  .icon:hover {
-      fill: #DA4567;
-   }
-	 </style>
-<path class="icon"  fill="#FFFFFF" d="M255,0C114.167,0,0,114.615,0,256s114.167,256,255,256s255-114.615,255-256S395.833,0,255,0z
+<path class="icon"  fill="#2DAFD0" d="M255,0C114.167,0,0,114.615,0,256s114.167,256,255,256s255-114.615,255-256S395.833,0,255,0z
 	 M360.448,190.081c0.095,2.067,0.138,4.145,0.138,6.233c0,63.708-48.497,137.179-137.18,137.179
 	c-27.232,0-52.567-7.982-73.906-21.656c3.774,0.445,7.611,0.668,11.501,0.668c22.589,0,43.377-7.706,59.882-20.638
 	c-21.105-0.393-38.903-14.332-45.041-33.487c2.936,0.562,5.957,0.87,9.063,0.87c4.399,0,8.661-0.594,12.71-1.696

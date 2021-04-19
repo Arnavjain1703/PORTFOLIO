@@ -1,8 +1,8 @@
 .myskills
 {
-    background: linear-gradient(to top, #252525 0%,  #000000 80%);
+    background: linear-gradient(to top, #252525 0%,  #040404 100%);
     width: 100vw;
-    height:100vh;
+    min-height:100vh;
     padding-top:30px;
 }
 .myskills .heading
@@ -14,8 +14,17 @@
     /* margin-top: 50px; */
     width: 100vw;
     padding-left:3vw;
+    margin-top: 60px;
 }
-
+.myskills img{
+    position: relative;
+    z-index: 10;
+    transition: all 0.2s;
+}
+.myskills img:hover
+{
+    transform: scale(1.3);
+}
 .myskills .content
 {
     width: 15vw;

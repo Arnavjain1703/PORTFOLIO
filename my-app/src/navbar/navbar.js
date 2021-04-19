@@ -1,34 +1,44 @@
-  
-import React from 'react';
-import './navbar.css';
-import {NavLink} from 'react-router-dom';
-import { Navbar,Nav } from 'react-bootstrap'
-class Navbars extends React.Component{
-    render(){
+import React, { Component } from 'react';
+import { MenuItems } from "./MenuItems"
+// import { Button } from "../Button"
+import './navbar.css'
+import { Link } from 'react-scroll';
+
+
+class Navbar extends Component {
+    state = { clicked: false }
+
+    handleClick = () => {
+        this.setState({ clicked: !this.state.clicked })
+    }
+
+    render() {
         return(
-            
-            <div className='app'>
-               <Navbar variant="dark" id="Navbar"  collapseOnSelect expand="lg">
-               <NavLink  exact className="logo" activeClassName="active" to="/"><span style={{marginLeft:"20px",color:"white",fontSize:"30px",letterSpacing:"3px"}}><span style={{color:"#E784A7"}}>/</span>AJ</span></NavLink>
-               <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-               <Navbar.Collapse id="responsive-navbar-nav">
-               <Nav className="mr-auto"></Nav>
-               <Nav>
-               <Nav.Link    id="nav-link" ><NavLink id="Navlink" exact c to="/login">Login</NavLink></Nav.Link>
-               <Nav.Link     id="nav-link">
-               <NavLink    exact id="Navlink"  to="/signup">Signup</NavLink>
-               </Nav.Link> 
-               <Nav.Link     id="nav-link">
-               <NavLink    exact id="Navlink"  to="/signup">Signup</NavLink>
-               </Nav.Link> 
-               <Nav.Link     id="nav-link">
-               <NavLink    exact id="Navlink"  to="/signup">Signup</NavLink>
-               </Nav.Link> 
-               </Nav>
-               </Navbar.Collapse> 
-               </Navbar>
-            </div>
+            <nav className="NavbarItems d-flex">
+               <Link  className="flex-grow-1"to="landing" smooth={true} duration={1000}><p className="navbar-logo  "><img class="tradebag-logo" src="/assets/logo.svg"/></p></Link>
+                <div className="menu-icon" onClick={this.handleClick}>
+                    {/* <i className={this.state.clicked ? 'fas fa-times' : 'fas fa-bars'}></i> */}
+<div id="nav-icon1" className={this.state.clicked? 'open' : 'no'}>
+  <span></span>
+  <span></span>
+  <span></span>
+</div>
+                </div>
+                <ul className={this.state.clicked ? 'nav-menu active' : 'nav-menu'} >
+                    {MenuItems.map((item, index) => {
+                        return (
+                            <li key={index}>
+                                <Link onClick={this.handleClick} className={item.cName} to={item.url} smooth={true} duration={1000}>
+                                {item.title}
+                                </Link>
+                            </li>
+                        )
+                    })}
+                </ul>
+                 
+            </nav>
         )
     }
-} 
-export default Navbars;
+}
+
+export default Navbar

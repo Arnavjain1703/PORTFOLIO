@@ -2,11 +2,77 @@
 {
     width: 100vw;
     height: 100vh;
-    background: linear-gradient(to bottom, #252525 0%,  #000000 80%);
+    background: linear-gradient(to bottom, #252525 0%,  #040404 100%);
     overflow: hidden;
+   
+}
+.landing .name{
+    letter-spacing: 3px;
+}
+.landing .skills{
+    letter-spacing: 2px;
+}
+.landing .hi 
+{
+    letter-spacing: 3px;
+}
+.landing button.scroll_down {
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+   left: 50vw;
+    height: 50px;
+    width: 25px;
+    bottom: 60px;
+    background-color: transparent;
+    border: 2px solid white;
+    border-radius: 20px;
+    cursor: pointer;
+    outline: none;
+   
+  }
+ .landing button.scroll_down:before {
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    content: '';
+    width: 6px;
+    height: 6px;
+    margin-left: -3px;
+    background-color: #fff;
+    border-radius: 100%;
+    -webkit-animation: scroll_down_btn-animation 2s infinite;
+    animation: scroll_down_btn-animation 2s infinite;
+    box-sizing: border-box;
+  }
+  
+  @keyframes scroll_down_btn-animation {
+    0% {
+      transform: translate(0, 0);
+      opacity: 0;
+    }
+    40% {
+      opacity: 1;
+    }
+    80% {
+      transform: translate(0, 20px);
+      opacity: 0;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+  
+.landing .hi img{
+    width: 30px;
+   
 }
 .landing .col-sm-6{
     padding:0px
+}
+.landing .margin
+{
+    margin-top: 5vh;
 }
 .landing .col-sm-3
 {
@@ -43,7 +109,21 @@
 {
     color: white;
     text-align: center;
-    font-size: 1vw;
+    font-size: 1.2vw;
+    font-family: 'Montserrat';
+    border-top: 1px solid #E784A7;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top: 20px;
+    
+}
+.landing .hi
+{
+    color: white;
+    text-align: center;
+    font-size: 1.2vw;
+    font-family: 'Montserrat';
+    margin-top: 18vh;
 }
 .landing .bg4
 {
@@ -89,7 +169,7 @@
     text-align: center;
   
     font-size: 7vw;
-    line-height:150px;
+    line-height:130px;
     font-family: myfont;
 }
 .landing .iconlayer1
@@ -104,20 +184,13 @@
 {
     width: 50%;
 }
+
 .iconlayer1
 {
     text-align: center;
     margin-top:20px;
 }
-.landing .line
-{
-    width: 100%;
-    border: 1px solid #E784A7;
-    background-color: #E784A7;
-    border-radius: 10px;
-  
-    margin-top: 50px;
-}
+
 .landing .iconBg
 {
    margin-top: 8vh;
@@ -141,7 +214,7 @@
   }
   
   
-  @media only screen and (max-width: 1024px) {
+  @media only screen and (max-width: 1025px) {
      .landing .bg2
      {
          top:30vh
@@ -159,14 +232,26 @@
      }
      .landing .name
      {
-        line-height:130px;
+        line-height:100px;
      }
-     .landing .name{
-         margin-top: 5vh;
-         
+     .landing .hi{
+         font-size: 2vw;
+         margin-top: 26vh;
+     }
+     .landing .skills
+     {
+         font-size: 1.5vw;
+         margin-left: 50px;
+         margin-right: 50px;
      }
   }
-  @media only screen and (max-width: 767px) {
+  @media only screen and (max-width: 960px) {
+    .landing button.scroll_down {
+       width: 20px;
+       height: 40px;
+    }
+  }
+  @media only screen and (max-width: 768px) {
     .landing .bg2
     {
         top:35vh
@@ -181,7 +266,7 @@
     }
     .landing .name
      {
-        line-height:10vh ;
+        line-height:15vh ;
      }
      .landing .display3
      {
@@ -189,7 +274,7 @@
      }
      .landing .name{
          width: 100%;
-         margin-top:20vh;
+       
      }
      .landing .line{
          width: 70%;
@@ -198,6 +283,12 @@
      .landing .skills
      {
          font-size: 10px;
+         margin-left: 5vh;
+         margin-right: 5vh;
+     }
+     .landing .hi
+     {
+         font-size: 2vw;
      }
  }
 
@@ -214,17 +305,17 @@
     }
     .landing .bg2
     {
-        width:44vw;
-        height: 44vw;
-        left: 26vw;
-        top:15vh !important;
+        width:40vw;
+        height: 40vw;
+        left: 30vw;
+        top:20vh !important;
     }
     .landing .bg3
     {
-      width:44vw;
-      height: 44vw;
-      left: 26vw;
-      top:15vh !important;
+      width:40vw;
+      height: 40vw;
+      left: 30vw;
+      top:20vh !important;
     }
     .landing .img
      {
@@ -232,14 +323,14 @@
      }
     .landing .bg4
     {
-      width:44vw;
-      height: 44vw;
-      left: 26vw;
-      top:15vh !important;
+      width:40vw;
+      height: 40vw;
+      left: 30vw;
+      top:20vh !important;
     }
     .landing .name{
-       margin-top: 15vh;
-       font-size: 10vw;
+     
+       font-size: 8vw;
        line-height: 90px !important;
   
     }
@@ -250,7 +341,48 @@
     }
     .landing .skills
     {
-        font-size:4vw;
+        font-size:3vw;
+        margin-top: 0vh;
+        letter-spacing: 1px;
     }
-   
+    .landing .hi{
+        font-size: 3vw;
+        margin-top: 18vh;
+    }
+    .landing button.scroll_down {
+        top:90vh;
+        left:47vw;
+    }
+    @media only screen and (max-width: 376px) {
+     .landing .hi{
+         margin-top: 20vh;
+         font-size: 4vw;
+     }   
+     .landing .skills
+     {
+         margin-left:3vw;
+     }
+     .landing .bg2{
+        height:45vw;
+        width: 45vw;
+        left: 27vw;
+     }
+     .landing .bg3
+     {
+        height:45vw;
+        width: 45vw;
+        left: 27vw;
+     }
+     .landing .bg4{
+        height:45vw;
+        width: 45vw;
+        left: 27vw;
+     }  
+    }
+    @media only screen and (max-width: 320px) {
+        .landing .skills{
+            letter-spacing: 0.5px;
+            margin-left: 5vw;
+        }
+    }
 }

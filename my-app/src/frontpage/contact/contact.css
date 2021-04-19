@@ -7,14 +7,28 @@
     /* margin-top: 50px; */
     width: 100vw;
     padding-left:3vw;
+    margin-top: 60px;
 }
-
+.contact img:hover{
+ transform: scale(3px);
+}
 .contact .content
 {
     width: 15vw;
     border-bottom: 3px solid #d78ca7;
    
     margin-bottom: 50px;
+}
+.contact .details
+{
+    position: relative;
+    z-index: 10;
+}
+.contact img{
+    transition: all ease-in-out 0.3s;
+}
+.contact a:hover img{
+    transform:scale(1.4);
 }
 .contact
 {
