@@ -4,6 +4,8 @@ import uuidv4 from "uuid";
 import { config } from "react-spring";
 import './project.css'
 import { connectAdvanced } from "react-redux";
+import Aos from 'aos';
+import 'aos/dist/aos.css'
 export default class Example extends Component {
   state = {
     goToSlide: 0,
@@ -17,14 +19,21 @@ export default class Example extends Component {
  componentDidMount()
  {
    this.loop();
+   Aos.init({
+
+    offset: 40,
+    duration: 500,
+    easing: 'ease-in-sine',
+  });
  }
+
  loop()
  {
 
     var self = this;
   this.x=setInterval(function() {
     self.setState({goToSlide:self.state.goToSlide+1})
-    console.log(self.state.goToSlide)
+    console.log(self.state.goToSlide%5)
   }, 2100);
   this.setState({loop:this.x});
  }
@@ -36,21 +45,21 @@ export default class Example extends Component {
   slides = [
     {
       key: uuidv4(),
-      content: <a className={(this.state.goToSlide%5)==1?"up":"low" } href="https://amuletentertainment.in"><img src="/assets/P1.png"></img></a>
+      content: <a className={(this.state.goToSlide%5)==0?"up":"low" } href="https://amuletentertainment.in"><img src="/assets/P1.png"></img></a>
     },
     {
       key: uuidv4(),
-      content: <a className={(this.state.goToSlide%5)==2?"up":"low"} href="https://joinchat-3c9d4.web.app/"><img src="/assets/P2.png"></img></a>
+      content: <a className={(this.state.goToSlide%5)==1?"up":"low"} href="https://joinchat-3c9d4.web.app/"><img src="/assets/P2.png"></img></a>
     },
    {
       key: uuidv4(),
-      content: <a className={(this.state.goToSlide%5==3)?"up":"low"} href="https://tradebag.in"><img src="/assets/P3.png"></img></a>
+      content: <a className={(this.state.goToSlide%5==2)?"up":"low"} href="https://tradebag.in"><img src="/assets/P3.png"></img></a>
     },{
       key: uuidv4(),
-      content: <a className={(this.state.goToSlide%5)==4?"up":"low"} href="https://shoppingelf-91afd.web.app/frontpage"><img src="/assets/P4.png"></img></a>
+      content: <a className={(this.state.goToSlide%5)==3?"up":"low"} href="https://shoppingelf-91afd.web.app/frontpage"><img src="/assets/P4.png"></img></a>
     },{
       key: uuidv4(),
-      content: <a className={(this.state.goToSlide%5)==5?"up":"low"} href="https://health-care-97af5.web.app/frontpage"><img src="/assets/P5.png"></img></a>
+      content: <a className={(this.state.goToSlide%5)==4?"up":"low"} href="https://health-care-97af5.web.app/frontpage"><img src="/assets/P5.png"></img></a>
     },
   
   ].map((slide, index) => {
@@ -99,12 +108,12 @@ export default class Example extends Component {
          <div  className="col-sm-6 col-xs-12 bg"></div>
          <div  className="col-sm-6 bg2"></div>
        </div>
-       <div className="heading"><div className="content">My Project 📚</div></div>
-        <div className="arrows d-flex justify-content-between">
+       <div data-aos="fade-up" className="heading"><div className="content">My Projects 📚</div></div>
+        <div data-aos="fade-up" className="arrows d-flex justify-content-between">
           <div  type="button" onClick={this.Left}  className="rButton"><img src="/assets/rightA.svg"></img></div>
           <div type="button" onClick={this.Right} className="lButton"><img src="/assets/leftA.svg"></img></div>
         </div>   
-      <div className="setting">
+      <div data-aos="fade-up" className="setting">
         <Carousel
           slides={this.slides}
           goToSlide={this.state.goToSlide}

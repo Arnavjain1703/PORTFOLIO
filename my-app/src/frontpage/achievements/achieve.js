@@ -1,7 +1,19 @@
 import React,{Component} from 'react';
 import './achieve.css'
 import Item from '../achievements/items/items'
+import Aos from 'aos';
+import 'aos/dist/aos.css'
 class Achieve extends Component{
+    componentDidMount()
+  {
+
+    Aos.init({
+ 
+     offset: 40,
+     duration: 500,
+     easing: 'ease-in-sine',
+   });
+  }
     state=
     {
         images:[
@@ -33,7 +45,7 @@ class Achieve extends Component{
    {
        return (
             <div className="achieve">
-                <div className="heading"><div className="content">Achievements🌟</div></div>
+                <div data-aos="fade-up" className="heading"><div className="content">Achievements🌟</div></div>
              <div className="cover">
              
              <div className="padding">
@@ -42,7 +54,7 @@ class Achieve extends Component{
                     this.state.images.map(e=>{
                         return(
                             
-                            <Item className="item"  image={e.img} desc={e.des}></Item>
+                            <Item data-aos="fade-up" className="item"  image={e.img} desc={e.des}></Item>
                             
                         )
                     })

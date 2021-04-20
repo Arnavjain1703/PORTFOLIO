@@ -135,9 +135,10 @@
     left: 12vw;
     top:20vh;
    
-    background: url("../../images/me.png");
+    background: url("../../images/me2.png");
     background-position: center;
     background-size: cover;
+    box-shadow: 0 7px 16px rgba(255,255,255,0.3), 0 5px 5px rgba(255,255,255,0.2);
 }
 .landing .bg2
 {

@@ -4,6 +4,7 @@
     width: 100vw;
     min-height:100vh;
     padding-top:30px;
+    padding-bottom: 80px;
 }
 .myskills .heading
 {
@@ -15,6 +16,14 @@
     width: 100vw;
     padding-left:3vw;
     margin-top: 60px;
+}
+.myskills .label
+{
+    color: white;
+    font-size: 18px;
+    font-family: 'Montserrat';
+    letter-spacing: 1px;
+
 }
 .myskills img{
     position: relative;
@@ -109,5 +118,10 @@
     .myskills .display
     {
         display: none;
+    }
+    .myskills .label
+    {
+        margin-top: 2px !important;
+        font-size: 10px;
     }
   }
