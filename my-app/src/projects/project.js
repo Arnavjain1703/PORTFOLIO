@@ -110,8 +110,8 @@ export default class Example extends Component {
        </div>
        <div data-aos="fade-up" className="heading"><div className="content">My Projects 📚</div></div>
         <div data-aos="fade-up" className="arrows d-flex justify-content-between">
-          <div  type="button" onClick={this.Left}  className="rButton"><img src="/assets/rightA.svg"></img></div>
-          <div type="button" onClick={this.Right} className="lButton"><img src="/assets/leftA.svg"></img></div>
+          <div  type="button" onClick={this.Right}  className="rButton"><img src="/assets/rightA.svg"></img></div>
+          <div type="button" onClick={this.Left} className="lButton"><img src="/assets/leftA.svg"></img></div>
         </div>   
       <div data-aos="fade-up" className="setting">
         <Carousel
