@@ -1,33 +1,38 @@
-import React from 'react';
+
 import './cursor.css';
+import React, { useEffect, useState } from "react";
 
+  
+const Cursor=()=>
+{
+    const [position, setPosition] = useState({x: 0, y: 0});
+    
+       useEffect(() => {
+           addEventListeners();
+           return () => removeEventListeners();
+       }, []);
+    
+       const addEventListeners = () => {
+           document.addEventListener("mousemove", onMouseMove);
+       };
+    
+       const removeEventListeners = () => {
+           document.removeEventListener("mousemove", onMouseMove);
+       };
+    
+       const onMouseMove = (e) => {
+           setPosition({x: e.clientX, y: e.clientY});
+       };                                   
+  return(
+    <div className="cursor">
+       {/* <div style={{ left: `${position.x}px`,     top: `${position.y}px`}}  className="cursor1">
+       
+       </div>
+       <div style={{ left: `${position.x}px`,     top: `${position.y}px`}}  className="cursor2">
 
-class Cursor extends React.Component{
-    state=
-    {
-        top:0,
-        left:0,
-
-    };
-    componentDidMount()
-    {
-        document.addEventListener('mouseover',(e)=>
-        {
-                 this.setState({top:e.clientY,left:e.clientX})
-        })
-        
-    }
-    render(){
-        return(
-            <div className="cursor">
-               {/* <div style={{top:this.state.top,left:this.state.left}}  className="cursor1">
-               
-               </div>
-               <div style={{top:this.state.top,left:this.state.left}} className="cursor2">
-
-                </div> */}
-            </div>
-        )
-    }
+        </div> */}
+    </div>
+)
 }
-export default Cursor
+  
+export default Cursor;

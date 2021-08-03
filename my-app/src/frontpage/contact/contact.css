@@ -32,7 +32,7 @@
 }
 .contact
 {
-    background: linear-gradient(to top, #252525 0%,  #000000 80%);
+    background: linear-gradient(to bottom, #252525 0%,  #000000 80%);
     width: 100vw;
     height:50vh;
     padding-top:30px;

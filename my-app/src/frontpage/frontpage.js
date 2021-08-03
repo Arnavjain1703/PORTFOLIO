@@ -6,6 +6,7 @@ import Project from '../projects/project';
 import MYskills from './MYskills/myskills'
 import Achieve from './achievements/achieve'
 import Contact from './contact/contact'
+import Exp from '../Experience/Experience'
 import './frontpage.css'
 class Frontpage extends Component{
    render()
@@ -15,6 +16,7 @@ class Frontpage extends Component{
         <div className="frontpage" >
         <Navbar></Navbar>
         <Landing></Landing>
+        <Exp></Exp>
         <Project></Project>
          <About></About>
         <MYskills ></MYskills >

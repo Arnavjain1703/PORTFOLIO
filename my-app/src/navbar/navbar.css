@@ -4,7 +4,7 @@
     height: 60px;
     display: flex;
    
-    align-items: center !important;
+    /* align-items: center !important; */
     position: fixed;
     width: 100vw;
     top:0;
@@ -43,10 +43,11 @@ margin-right: 10px;
     grid-gap: 10px;
     padding-top: 10px;
     list-style: none;
-    text-align: center;
+    /* text-align: center; */
     width: 70vw;
     justify-content: end;
     margin-right: 2rem;
+    padding-left:0px
 }
 
 .nav-links {

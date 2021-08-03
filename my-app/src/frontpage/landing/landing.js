@@ -23,7 +23,7 @@ class Frontpage extends Component{
                 <div  className=" iconlayer1 ">
                   
                   <div className="hi" data-aos="fade-up">
-                    HI <img src="/assets/hi.gif"></img>, My Name Is
+                    HI 👋, My Name Is
            
 
                   </div>

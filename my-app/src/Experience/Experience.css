@@ -1,20 +1,20 @@
-.projects
+.Exp
 {
-    background: linear-gradient(to bottom, #252525 0%,  #040404 100%);
+    background: linear-gradient(to top, #252525 0%,  #040404 100%);
     height:100vh;
     background-size: cover;;
     background-position:center;
   
 }
-.projects .up
+.Exp .up
 {
     z-index: 3;
 }
-.projects .low
+.Exp .low
 {
     z-index: 0;
 }
-.projects .arrows
+.Exp .arrows
 {
     position:absolute;
     
@@ -24,7 +24,7 @@
     z-index: 2;
     height: 10px;
 }
-.projects .bg2
+.Exp .bg2
 {
     width: 100%;
     height: 100vh;
@@ -35,24 +35,24 @@
     opacity: 1;
     position: absolute;
 }
-.projects .rButton img
+.Exp .rButton img
 {
   width: 40px;
 }
-.projects .lButton img
+.Exp .lButton img
 {
   width: 40px;
 }
-.projects img{
+.Exp img{
     width: 34vw;
     height: 76vh;
 }
-.projects .setting
+.Exp .setting
 {
     width: 100vw;
     height: 70vh;
 }
-.projects .bg
+.Exp .bg
 {
     width: 100%;
     height: 100vh;
@@ -62,7 +62,7 @@
     opacity: 1;
     position: absolute;
 }
-.projects .heading
+.Exp .heading
 {
     color: white;
     font-family: myFont;
@@ -72,7 +72,7 @@
     width: 100vw;
     padding-left:3vw;
 }
-.projects .content
+.Exp .content
 {
     width: 20vw;
     border-bottom: 2px solid #d78ca7;
@@ -80,30 +80,30 @@
     margin-bottom: 50px;
 }
 @media screen and (max-width: 1024px) {
-    .projects .content
+    .Exp .content
     {
         width: 30vw;
     }
-    .projects .heading
+    .Exp .heading
     {
         font-size: 25px;
     }
   }
   @media screen and (max-width: 576px) {
-    .projects .content
+    .Exp .content
     {
         width: 60vw;
         text-align: center;
     }
-    .projects .heading
+    .Exp .heading
     {
         font-size: 6vw;
         padding-left: 20vw;
     }
-    .projects img{
+    .Exp img{
         width: 50vw;
     }
-    .projects .bg2{
+    .Exp .bg2{
         display: none;
     }
   }

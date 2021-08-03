@@ -2,11 +2,11 @@ import React, { Component } from "react";
 import Carousel from "react-spring-3d-carousel";
 import uuidv4 from "uuid";
 import { config } from "react-spring";
-import './project.css'
+import './Experience.css'
 import { connectAdvanced } from "react-redux";
 import Aos from 'aos';
 import 'aos/dist/aos.css'
-import Item from './items/items'
+import Item from './Exp/items'
 export default class Example extends Component {
   state = {
     goToSlide: 0,
@@ -52,49 +52,64 @@ export default class Example extends Component {
   slides = [
     {
       key: uuidv4(),
-      content: <Item 
-      
-      desc={
-        <ul>
-          <li>
-          Built a cross-platform Video Conferencing App focusing on
-minimum server dependency</li>
-
-  <li>Worked on connecting 50+ users with clear audio/video</li>
-  <li>quality, security, screen sharing, and chat features</li>
-  <li>Tech Used:Angular 8, Node.JS</li>
-        </ul>
-      } unloop={this.unloop} loop={this.loop} className={(this.state.goToSlide%5)==1?"up":"low"} link="https://github.com/Arnavjain1703/JoinChat-1/blob/master/README.md" image="/assets/P2.png"></Item>
+      content: <Item unloop={this.unloop} loop={this.loop} desc={
+             <ul type="disk">
+               <li>Worked as Lead Angular Developer</li>
+               <li>Developed a Web Portal for Amulet Entertainment on which users can register for Auditions and pay using the Payment Gateway integrated in it</li>
+               <li>Used Rxjs For State Management</li>
+               <li>Integrate with Django</li>
+             </ul>
+      }   className={(this.state.goToSlide%5)==0?"up":"low" } link="https://amuletentertainment.in" image="/assets/P1.png"></Item>
     },
-    {
+   {
       key: uuidv4(),
-      content: <Item   desc={
-        <ul>
-          <li>
-          An E-commerce website in which user can purschase products category-wise and seller can add products to sell
-          </li>
-          <li>Tech Used :Angular 8, Bootstrap, ASP.NET (MVC) version - 4.5, Microsoft SQL Server Management Studio for managing databases.
-          </li>
-        </ul>
-      }unloop={this.unloop}loop={this.loop} className={(this.state.goToSlide%5)==3?"up":"low"} link="https://github.com/Arnavjain1703/ShoppingElf/blob/master/README.md" image="/assets/P4.png"> </Item>
+      content: <Item desc={
+         <ul type="disk">
+           <li>
+            Worked as React.Js Developer
+           </li>
+           <li>
+            Developed a Static Webpage on React
+           </li>
+           <li>
+             Hosted on Githun Pages
+           </li>
+         </ul>
+      } unloop={this.unloop}loop={this.loop} className={(this.state.goToSlide%5==2)?"up":"low"} link="https://tradebag.in"  image="/assets/P3.png"> </Item>
     },
     {
       key: uuidv4(),
       content: <Item desc={
         <ul>
           <li>
-            Bytepad is Used By College Students and Teachers
+            Worked as Lead Node.Js Developer
           </li>
           <li>
-            Worked as Lead React Developer
+            Designed Database
           </li>
           <li>
-          Bytepad has been a prominent source to provide college students with previous year questions papers and solutions, thus helping them in preparing for their upcoming examinations
+          Created Rest AIPs for Car Parking Vendor App
+          </li>
+          <li>
+          Integrated third party SMS API fast2sms for OTP service
           </li>
         </ul>
-      } unloop={this.unloop}loop={this.loop} className={(this.state.goToSlide%5)==3?"up":"low"} link="https://Bytepad.silive.in" image="/assets/P6.png"> </Item>
-    }
-  
+      } unloop={this.unloop}loop={this.loop} className={(this.state.goToSlide%5)==3?"up":"low"} link="https://drive.google.com/file/d/1xqGjF0tYQk1E6p0IQc96-1DnxQzwnp8u/view" image="/assets/E1.png"> </Item>
+    },
+    {
+      key: uuidv4(),
+      content: <Item 
+       desc={<ul type="disk">
+          <li>
+           Full Stack Developer
+          </li>
+          <li>
+          Working with a team of 10 designers and 32 developers for cultivating technical activities
+          </li>
+       </ul>}
+      unloop={this.unloop}loop={this.loop} className={(this.state.goToSlide%5)==3?"up":"low"} link="https://silive.in" image="/assets/E2.png"> </Item>
+    },
+
   ].map((slide, index) => {
     return { ...slide};
   });
@@ -136,12 +151,12 @@ minimum server dependency</li>
   render() {
     return (
       
-     <div className="projects">
+     <div className="Exp">
        <div className="row position">
          <div  className="col-sm-6 col-xs-12 bg"></div>
          <div  className="col-sm-6 bg2"></div>
        </div>
-       <div data-aos="fade-up" className="heading"><div className="content">My Projects 📚</div></div>
+       <div data-aos="fade-up" className="heading"><div className="content">MY EXPERIENCE</div></div>
         <div data-aos="fade-up" className="arrows d-flex justify-content-between">
           <div  type="button" onClick={this.Right}  className="rButton"><img src="/assets/rightA.svg"></img></div>
           <div type="button" onClick={this.Left} className="lButton"><img src="/assets/leftA.svg"></img></div>
