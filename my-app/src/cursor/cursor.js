@@ -25,12 +25,12 @@ const Cursor=()=>
        };                                   
   return(
     <div className="cursor">
-       {/* <div style={{ left: `${position.x}px`,     top: `${position.y}px`}}  className="cursor1">
+       <div style={{ left: `${position.x}px`,     top: `${position.y}px`}}  className="cursor1">
        
        </div>
        <div style={{ left: `${position.x}px`,     top: `${position.y}px`}}  className="cursor2">
 
-        </div> */}
+        </div>
     </div>
 )
 }

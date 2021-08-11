@@ -14,13 +14,19 @@
 .cursor .cursor2
 {
     width: 8px;
-    height:8px;
-    border-radius: 50%;
-    border: 2px solid white;
+    height: 8px;
+    border: 2px solid #fefefe;
+    border-radius: 100%;
     position: fixed;
-    top:0px;
-    left: 0px;
-    z-index: 100;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    z-index: 9999;
+    mix-blend-mode: difference;
     /* transition: .001s ; */
+}
+@media screen and (max-width: 576px) {
+    .cursor
+    {
+        display: none;
+    }
 }
