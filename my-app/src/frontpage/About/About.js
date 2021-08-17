@@ -1,5 +1,6 @@
 import React from 'react';
 import './About.css';
+import '../../cursor/cursor.css'
 import Aos from 'aos';
 import 'aos/dist/aos.css'
 class About extends React.Component {
@@ -15,7 +16,7 @@ class About extends React.Component {
     }
     render(){
         return (
-            <div className="About">
+            <div className="About Hover">
              <div className="cover row"><div className="col-sm-6 cover2"></div><div className="col-sm-6 cover2"></div></div> 
                <div data-aos="fade-up" className="heading"><div className="content">About Me 👨‍🎓</div></div>
                  <div data-aos="fade-up" className="para">

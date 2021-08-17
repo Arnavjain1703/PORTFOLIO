@@ -1,5 +1,6 @@
 import React,{Component} from 'react';
 import './landing.css'
+import '../../cursor/cursor.css'
 import { Link } from 'react-scroll';
 import Aos from 'aos';
 import 'aos/dist/aos.css'
@@ -68,7 +69,7 @@ class Frontpage extends Component{
                   </div>
               </div>
             </div>
-            <Link  to="projects" smooth={true} duration={1000} data-aos="fade-up">
+            <Link  to="Exp" smooth={true} duration={1000} data-aos="fade-up">
 
             <div><button type="button" style={{display:"block"}} class="scroll_down" id="scroll_down"></button></div>
             </Link>

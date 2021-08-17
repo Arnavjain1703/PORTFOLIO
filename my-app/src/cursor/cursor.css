@@ -24,6 +24,13 @@
     mix-blend-mode: difference;
     /* transition: .001s ; */
 }
+/* .Hover{
+    background: white;
+}
+.Hover:hover .cursor 
+{
+    background-color: white;
+} */
 @media screen and (max-width: 576px) {
     .cursor
     {
