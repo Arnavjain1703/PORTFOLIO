@@ -1,6 +1,6 @@
 .myskills
 {
-    background: linear-gradient(to bottom, #252525 0%,  #040404 100%);
+    /* background: linear-gradient(to bottom, #252525 0%,  #040404 100%); */
     width: 100vw;
     min-height:100vh;
     padding-top:30px;
@@ -47,7 +47,7 @@
 }
 .myskills .bg
 {
-    background:url('../../images/bg1.png');
+    /* background:url('../../images/bg1.png'); */
     width: 100vw;
     height: 100vh;
     background-position: center;
@@ -65,7 +65,7 @@
 .myskills .cover2
 {
     background-position:center;
-    background-image: url("../../images/bg1.png");
+    /* background-image: url("../../images/bg1.png"); */
 }
 .myskills img
 {

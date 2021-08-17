@@ -2,7 +2,7 @@
 {
  width: 100vw;
  min-height: 100vh;
- background: linear-gradient(to top, #252525 0%,  #000000 80%);
+ /* background: linear-gradient(to top, #252525 0%,  #000000 80%); */
 
 }
 .achieve .cover
@@ -11,7 +11,7 @@
     width: 100vw;
     min-height: 90vh;
     background-position:center;
-    background-image: url("../../images/bg1.png");
+    /* background-image: url("../../images/bg1.png"); */
    
     
 }

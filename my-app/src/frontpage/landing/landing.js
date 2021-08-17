@@ -18,6 +18,7 @@ class Frontpage extends Component{
    
        return (
         <div className="landing " >
+            <div class="landing2">
             <div  className="row display">
               <div  className="col-sm-6 iconBg">
                 <div  className=" iconlayer1 ">
@@ -71,6 +72,7 @@ class Frontpage extends Component{
 
             <div><button type="button" style={{display:"block"}} class="scroll_down" id="scroll_down"></button></div>
             </Link>
+         </div>
          </div>
 
        )

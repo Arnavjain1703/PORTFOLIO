@@ -14,6 +14,7 @@ class Frontpage extends Component{
        return (
         <div >
         <div className="frontpage" >
+          <div className="background">
         <Navbar></Navbar>
         <Landing></Landing>
         <Exp></Exp>
@@ -23,8 +24,8 @@ class Frontpage extends Component{
         <Achieve></Achieve>
         <Contact></Contact>
         </div>
-         </div>
-
+        </div>
+        </div>
        )
    }
 }
