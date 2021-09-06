@@ -46,10 +46,20 @@ export default class Example extends Component {
  }
  unloop=()=>
  {
-    console.log("kjdfv");
+   
     clearInterval(this.x);
  }
   slides = [
+    {
+      key: uuidv4(),
+      content: <Item 
+       desc={<ul type="disk">
+          <li>
+           React.Js  Developer Intern
+          </li>
+       </ul>}
+      unloop={this.unloop}loop={this.loop} className={(this.state.goToSlide%5)==3?"up":"low"} link="https://silive.in" image="/assets/sony.jpg"> </Item>
+    },
     {
       key: uuidv4(),
       content: <Item unloop={this.unloop} loop={this.loop} desc={
@@ -59,7 +69,7 @@ export default class Example extends Component {
                <li>Used Rxjs For State Management</li>
                <li>Integrate with Django</li>
              </ul>
-      }   className={(this.state.goToSlide%5)==0?"up":"low" } link="https://amuletentertainment.in" image="/assets/P1.png"></Item>
+      }   className={(this.state.goToSlide%5)==0?"up":"low" } link="https://amulet-c6913.web.app" image="/assets/P1.png"></Item>
     },
    {
       key: uuidv4(),
@@ -109,6 +119,7 @@ export default class Example extends Component {
        </ul>}
       unloop={this.unloop}loop={this.loop} className={(this.state.goToSlide%5)==3?"up":"low"} link="https://silive.in" image="/assets/E2.png"> </Item>
     },
+    
 
   ].map((slide, index) => {
     return { ...slide};
